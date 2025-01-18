@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>DebugFest</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="shortcut icon" href="./img/logo_debug_no_fondo.png" type="image/x-icon">
+    <script src="./js/javaScript.js"></script>
+</head>
+
+<body class="bg-transparent">
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-md py-0 px-4 bg-dark fixed-top z-1" >
+                <div class="container-fluid" data-aos="fade-right" data-aos-duration="1000">
+                    <a class="navbar-brand" href="#"><img class="img-fluid py-2" alt="logo"
+                            src="./img/logo_debug_no_fondo.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light" href="./entradas.html">Entradas</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light" href="./camping.html">Camping</a>
+                            </li>
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Info
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./restauracion.html">Restauración</a></li>
+                                    <li><a class="dropdown-item" href="./trabajaConNosotros.html">Trabaja con Nosotros</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container-fluid mt-5">
+            <div id="fondo-imagen" class="card mb-3 pt-5 border-0">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-6">
+                        <img id="festival1" src="./img/festiva2.png" class="img-fluid" alt="festival">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">ENTRADAS YA A LA VENTA</h2>
+                            <p class="card-text text-center px-2 my-4">✨Del 14 al 17 de julio ven a disfrutar, te
+                                esperamos en la pista✨</p>
+                            <p class="card-text text-center px-2"> Compra tus YA entradas al mejor precio.</p>
+                            <button class="compra d-block mx-auto mt-4">
+                                <a href="./entradas.html" class="button_top"> COMPRAR ENTRADAS </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid w-100 mt-5 px-md-5">
+            <div class="row">
+                <div class="col px-5">
+                    <h1 class="text-center mb-4">Recarga tus pulseras</h1>
+                    <div class="row row-cols-1 row-cols-md-3 mt-4 text-center">
+                        <div class="col-md-12 col-lg-4"  data-aos="fade-right" data-aos-duration="1000">
+                            <div class="pulsera sombra-rojo card borde-rojo mb-3">
+                                <div class="card-header text-center bg-rojo">
+                                    <h2>Basic Pack</h2>
+                                </div>
+                                <div class="card-body px-4 px-lg-5">
+                                    <h3 class="card-title">Precio 20€</h3>
+                                    <h5 class="card-text text-start">Ventajas:</h5>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="bi bi-check-lg text-success"></i> Recarga de 20€</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> 5€ + de regalo</li>
+                                        <li><i class="bi bi-x-lg text-danger"></i> 1 bebida gratis</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> 1 comida gratis</li>
+                                        <li><i class="bi bi-x-lg text-danger"></i> Acceso preferente</li>
+                                        <li><i class="bi bi-x-lg text-danger"></i> Front Stage</li>
+                                    </ul>
+                                    <button class="compra d-block mx-auto mt-4">
+                                        <a href="#" class="button_top bg-rojo"> COMPRAR </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="pulsera sombra-verde card borde-verde mb-3">
+                                <div class="card-header text-center bg-verde">
+                                    <h2>Premium Pack</h2>
+                                </div>
+                                <div class="card-body px-4 px-lg-5">
+                                    <h3 class="card-title">Precio 50€</h3>
+                                    <h5 class="card-text text-start">Ventajas:</h5>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="bi bi-check-lg text-success"></i> Recarga de 50€</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> 15€ + de regalo</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> 2 bebida gratis</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> 1 comida gratis</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> Acceso preferente</li>
+                                        <li><i class="bi bi-x-lg text-danger"></i> Front Stage</li>
+                                    </ul>
+                                    <button class="compra d-block mx-auto mt-4">
+                                        <a href="#" class="button_top bg-verde"> COMPRAR </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="pulsera sombra-azul card borde-azul mb-3">
+                                <div class="card-header text-center bg-azul">
+                                    <h2>VIP Pack</h2>
+                                </div>
+                                <div class="card-body px-4 px-lg-5">
+                                    <h3 class="card-title">Precio 100€</h3>
+                                    <h5 class="card-text text-start">Ventajas:</h5>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="bi bi-check-lg text-success"></i> Recarga de 100€</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> 25€ + de regalo</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> 3 bebida gratis</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> 2 comida gratis</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> Acceso preferente</li>
+                                        <li><i class="bi bi-check-lg text-success"></i> Front Stage</li>
+                                    </ul>
+                                    <button class="compra d-block mx-auto mt-4">
+                                        <a href="#" class="button_top bg-azul"> COMPRAR </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid my-5 px-5">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">Artistas que animarán la fiesta del año</h1>
+                    <div class="row row-cols-1 row-cols-md-4 mt-5 text-center">
+                        <button class="col-md-6 col-lg-3 my-4 bg-transparent border-0" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-custom-class="custom-tooltip fw-bold fs-4" title="Maluma">
+                            <img class="img-fluid artistas" src="./img/maluma.jpg" alt="Maluma">
+                            <p class="fw-bold mt-2">14 DE JULIO</p>
+                        </button>
+                        <button class="col-md-6 col-lg-3 my-4  bg-transparent border-0" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-custom-class="custom-tooltip fw-bold fs-4"
+                            title="Myke Towers">
+                            <img class="img-fluid artistas" src="./img/myke_towers.jpeg" alt="Myke Towers">
+                            <p class="fw-bold mt-2">16 DE JULIO</p>
+                        </button>
+                        <button class="col-md-6 col-lg-3 my-4  bg-transparent border-0" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-custom-class="custom-tooltip fw-bold fs-4" title="Ozuna">
+                            <img class="img-fluid artistas" src="./img/ozuna.jpeg" alt="Ozuna">
+                            <p class="fw-bold mt-2">14 DE JULIO</p>
+                        </button>
+                        <button class="col-md-6 col-lg-3 my-4  bg-transparent border-0" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-custom-class="custom-tooltip fw-bold fs-4" title="Mora">
+                            <img class="img-fluid artistas" src="./img/mora.jpeg" alt="Mora">
+                            <p class="fw-bold mt-2">17 DE JULIO</p>
+                        </button>
+                        <button class="col-md-6 col-lg-3 my-4 bg-transparent border-0" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-custom-class="custom-tooltip fw-bold fs-4" title="Dei V">
+                            <img class="img-fluid artistas" src="./img/dei_v.jpg" alt="Dei V">
+                            <p class="fw-bold mt-2">15 DE JULIO</p>
+                        </button>
+                        <button class="col-md-6 col-lg-3 my-4  bg-transparent border-0" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-custom-class="custom-tooltip fw-bold fs-4" title="Cano">
+                            <img class="img-fluid artistas" src="./img/cano.jpeg" alt="Cano">
+                            <p class="fw-bold mt-2">14 DE JULIO</p>
+                        </button>
+                        <button class="col-md-6 col-lg-3 my-4  bg-transparent border-0" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-custom-class="custom-tooltip fw-bold fs-4" title="JC Reyes">
+                            <img class="img-fluid artistas" src="./img/JCREYES.jpg" alt="JC Reyes">
+                            <p class="fw-bold mt-2">17 DE JULIO</p>
+                        </button>
+                        <button class="col-md-6 col-lg-3 my-4  bg-transparent border-0" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-custom-class="custom-tooltip fw-bold fs-4"
+                            title="Juan Magan">
+                            <img class="img-fluid artistas" src="./img/juan_magan.jpg" alt="Juan Magan">
+                            <p class="fw-bold mt-2">17 DE JULIO</p>
+                        </button>
+                    </div>
+                    <div class="text-center mb-3">
+                        <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    <h2 class="text-center">¡Pronto conocerás a más artistas increíbles!
+                    </h2>
+                </div>
+            </div>
+
+        </section>
+        <section class="container-fluid my-5 ">
+            <h1 class="perder text-center mb-3"><i class="bi bi-arrow-down"></i> ¿Te lo vas a perder? <i
+                    class="bi bi-arrow-down"></i></h1>
+            <div id="carouselExampleSlidesOnly" class="carousel slide w-50 mx-auto " data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./img/festi1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/festi2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/festi3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/festi4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center">¿Dónde estamos?</h1>
+                        <div class="row row-cols-1 row-cols-lg-2 mt-5 text-center">
+                            <div class="col">
+                                <div class="ubicacion card border-0">
+                                    <div class="card-body">
+                                        <h2 class="card-title text-center">¿Cómo llegar?</h2>
+                                        <p class="card-text text-center">Si vienes en coche, te dejamos la dirección
+                                            para
+                                            que no te pierdas.</p>
+                                        <p class="card-text text-center">Playa del Cable, 29603, Marbella</p>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7410.351120348323!2d-4.8781550321872595!3d36.50670961191334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd73278b47cd8483%3A0xe523c3c8ca95981d!2sPlaya%20del%20Cable!5e0!3m2!1ses!2ses!4v1737074099600!5m2!1ses!2ses"
+                                            id="map" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-5 mt-lg-0">
+                                <div class="ubicacion card border-0">
+                                    <div class="card-body">
+                                        <h2 class="card-title
+                                        text-center">¿Dónde alojarse?</h2>
+                                        <p class="card-text text-center px-2">¿Te quedaste sin plaza en el camping? ¡No te
+                                            preocupes!
+                                            Queremos que vivas la experiencia de DebugFest al máximo, por eso te
+                                            ofrecemos opciones de alojamiento cómodas y cercanas. ¡Así nada te impedirá
+                                            disfrutar de la fiesta del año!</p>
+
+                                        <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed bg-secondary text-light"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne">
+                                                        Amàre Beach Hotel Marbella
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"><img class="img-fluid"
+                                                            src="./img/hotel1.jpg" alt="Amàre Beach Hotel Marbella">
+                                                    </div>
+                                                    <a
+                                                        href="https://www.booking.com/searchresults.es.html?aid=376644&label=marbella%2Fmarbellacitycentre-9adSeMQBB2DP5dfLC_2AxwS494058258959%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-162368582186%3Alp1005449%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcGt_tphEo8pLz4JcmekErU&gclid=Cj0KCQiA-aK8BhCDARIsAL_-H9moAXlXc8l5etbSf3NctEpqeZNyPanDmLbmTO9lNmRtSB12eRmlS-QaAnlUEALw_wcB&dest_type=district&redirected=1&dest_id=8443&source=district&from_district=1&keep_landing=1&sid=502b6b116719b2464c4fae56a852c4f0">
+                                                        <button class="reserva mb-3">Reserva</button></a>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed bg-secondary text-light"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                        aria-controls="flush-collapseTwo">
+                                                        Hotel Claude Marbella
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"><img class="img-fluid"
+                                                            src="./img/hotel2.jpeg" alt="Hotel Claude Marbella">
+                                                    </div>
+                                                    <a
+                                                        href="https://www.booking.com/hotel/es/claude-marbella.html?aid=364757&label=b245830820kcv">
+                                                        <button class="reserva mb-3">Reserva</button></a>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button
+                                                            class="accordion-button collapsed bg-secondary text-light"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                            aria-controls="flush-collapseThree">
+                                                            Alanda Marbella Hotel
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body"><img class="img-fluid"
+                                                                src="./img/hotel3.jpg" alt="Alanda Marbella Hotel">
+                                                        </div>
+                                                        <a
+                                                            href="https://www.booking.com/hotel/es/claude-marbella.html?aid=364757&label=b245830820kcv">
+                                                            <button class="reserva mb-3">Reserva</button></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="container-fluid mt-4 bg-dark text-light">
+        <div class="row p-3">
+            <div class="col-12 col-md-7">
+                <h2 class="text-center">¿Quieres saber más?</h2>
+                <p class="text-center">¡Síguenos en nuestras redes sociales!</p>
+                <ul class="nav col-md-12 list-unstyled mx-auto justify-content-center">
+                    <li class="mx-3"><a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i
+                                class="logos bi bi-facebook text-light"></i></a></li>
+                    <li class="mx-3"><a href="https://www.instagram.com/" target="_blank"><i
+                                class="logos bi bi-instagram text-light"></i></a></li>
+                    <li class="mx-3"><a href="https://x.com/?lang=es&mx=2" target="_blank"><i
+                                class="logos bi bi-twitter text-light"></i></a></li>
+                    <li class="mx-3"><a href="https://www.youtube.com/" target="_blank"><i
+                                class="logos bi bi-youtube text-light"></i></a></li>
+                </ul>
+                <h2 class="text-center mt-5">Patrocinadores</h2>
+                <div class="row row-cols-1 row-cols-3 mt-5 mb-2 text-center">
+                    <div class="col">
+                        <img class="img-fluid patro" src="./img/patrocinador1.png" alt="patrocinador1">
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid patro" src="./img/patrocinador2.png" alt="patrocinador2">
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid patro" src="./img/patrocinador3.png" alt="patrocinador3">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="img-fluid patro" src="./img/patrocinador4.png" alt="patrocinador4">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="img-fluid patro" src="./img/patrocinador5.png" alt="patrocinador5">
+                    </div>
+                    <div class="col mt-2">
+                        <img class="img-fluid patro" src="./img/patrocinador6.png" alt="patrocinador3">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-5 mt-md-0">
+                <h2 class="text-center">¿Dudas?</h2>
+                <p class="text-center">¡Contáctanos!</p>
+                <form action=" " class="mx-auto">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required placeholder="Nombre y Apellidos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required maxlength="120"></textarea>
+                    </div>
+                    <button type="submit" class="reserva">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center pb-3">
+            <p>© 2025 DebugFest. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>

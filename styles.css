@@ -1,0 +1,420 @@
+@font-face {
+    font-family: 'Audiowide';
+    src: url(./font/Audiowide-Regular.ttf);
+}
+
+:root {
+    --cyan: #03fee4;
+    --rosa: #fa04c4;
+    --verde: #03f24d;
+    --rojo: #e25256;
+    --azul-marino: #113f61;
+    --morado: #607ef8;
+    --azul-medio: #1699b2;
+    --rosa-claro: #f663c7;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Audiowide', sans-serif;
+    background-image: linear-gradient(90deg, var(--morado), var(--cyan));
+    background-size: 400% 400%;
+}
+
+.navbar-brand .img-fluid {
+    max-width: 70px;
+}
+
+.navbar-toggler {
+    border-color: var(--white);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.nav-link {
+    transition: transform 0.1s, box-shadow 0.2s;
+}
+
+.nav-link:hover {
+    background-color: var(--morado);
+    border-radius: 5px;
+    color: var(--black) !important;
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 10px rgb(151, 151, 151);
+}
+
+.nav-link:active {
+    transform: translateY(0px);
+    box-shadow: inset 0px 2px 5px rgb(151, 151, 151);
+}
+
+#fondo-imagen {
+    border-radius: 0 0 20px 20px;
+
+}
+
+#festival1 {
+    object-fit: cover;
+    height: 350px;
+    border-radius: 0 0 0px 20px;
+
+}
+
+.compra {
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    background: var(--black);
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--black);
+    border-radius: 0.75rem;
+    padding: 0.75em 1.5em;
+    background: var(--morado);
+    color: var(--black);
+    transform: translateY(-0.2em);
+    transition:background-color 0.3s, transform 0.2s ease;
+    text-decoration: none;
+
+}
+
+button:hover .button_top {
+    transform: translateY(-0.33em);
+    color: var(--black);
+    background: var(--cyan);
+
+
+}
+
+button:active .button_top {
+    transform: translateY(0);
+    color: var(--black);
+
+}
+
+.pulsera {
+    border: 5px solid;
+    border-radius: 0.75rem;
+    height: auto;
+}
+
+.sombra-rojo {
+    box-shadow: 0px 0px 15px 8px var(--rojo);
+}
+
+.bg-rojo {
+    background-color: var(--rojo);
+}
+
+.borde-rojo {
+    border: solid 5px var(--rojo);
+}
+
+.bg-rojo:hover {
+    background-color: var(--rojo) !important;
+}
+
+.sombra-verde {
+    box-shadow: 0px 0px 15px 8px var(--verde);
+}
+
+.bg-verde {
+    background-color: var(--verde);
+}
+
+.borde-verde {
+    border-color: var(--verde);
+}
+
+.bg-verde:hover {
+    background-color: var(--verde) !important;
+}
+
+.sombra-azul {
+    box-shadow: 0px 0px 15px 8px var(--cyan);
+}
+
+.bg-azul {
+    background-color: var(--cyan);
+}
+
+.borde-azul {
+    border-color: var(--cyan);
+}
+
+.bg-azul:hover {
+    background-color: var(--cyan) !important;
+}
+
+.bg-rosa {
+    background-color: var(--rosa);
+}
+
+.bg-rosa:hover {
+    background-color: var(--rosa) !important;
+}
+
+.artistas {
+    border-radius: 4rem;
+    width: 200px;
+    height: 200px;
+    border: var(--azul-marino) 5px double;
+    transition:box-shadow 0.3s, transform 0.3s ease-in-out;
+}
+.artistas:hover {
+    box-shadow: 0 10px 20px var(--azul-marino);
+    transform: translateY(-5px);
+
+}
+
+.carousel-inner {
+    border-radius: 0.75rem;
+    border: var(--cyan) 4px solid;
+}
+
+.carousel-item img {
+    max-height: 450px;
+}
+
+
+.bi-arrow-down {
+    color: var(--azul-marino);
+    font-size: 2rem;
+}
+
+.accordion-body img {
+    width: 70%;
+    border-radius: 0.75rem;
+}
+
+.reserva {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: var(--morado);
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.reserva:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+.reserva:hover:not(:disabled) {
+    background: var(--morado);
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.reserva:disabled {
+    cursor: auto;
+    color: grey;
+}
+
+#map {
+    height: 280px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ubicacion {
+    min-height: 450px;
+}
+
+.logos {
+    font-size: 2rem;
+
+}
+
+.patro {
+    max-width: 90px;
+}
+
+.ticket {
+    width: 30%;
+}
+
+.mensaje {
+    color: var(--azul-medio);
+    background-color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: auto;
+    width: fit-content;
+    box-shadow: 0px 10px 15px var(--black);
+
+}
+
+.compraEntradas {
+    box-shadow: 0px 5px 10px var(--black);
+}
+
+.botonInfo {
+    border: 1px solid var(--black);
+    transition: transform 0.1s, box-shadow 0.2s;
+}
+
+.botonInfo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px var(--black);
+}
+
+.botonInfo:active {
+    transform: translateY(0px);
+    box-shadow: inset 0px 5px 10px var(--black);
+}
+
+.zonaTiendas {
+    max-width: 80%;
+    max-height: 80%;
+
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px var(--black);
+
+}
+
+.tiendasCampania {
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px var(--black);
+}
+
+.reserva {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: var(--morado);
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.reserva:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+.reserva:hover:not(:disabled) {
+    background: var(--morado);
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.reserva:disabled {
+    cursor: auto;
+    color: grey;
+}
+.tarjetasRest {
+    border-radius: 0.75rem;
+    transition: box-shadow 0.3s;
+}
+
+.tarjetasRest:hover {
+    box-shadow: 0 10px 20px var(--black);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.list-group-item {
+    padding: 0.5rem;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: var(--cyan);
+}
+
+.iPagos {
+    font-size: 1.3rem;
+}
+.food-img {
+    width: 300px;
+    border-radius: 0.75rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px var(--black);
+}
+.icono {
+    color: var(--morado);
+}
+.tarjetaEmpleo {
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px var(--azul-marino);
+    transition:box-shadow 0.3s;
+}
+
+.tarjetaEmpleo:hover {
+    box-shadow: 0 8px 16px var(--azul-marino);
+}
+
+.enviaSolicitud {
+    background-color: var(--morado);
+    border-color: var(--morado);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.enviaSolicitud:hover {
+    background-color: var(--cyan);
+    border-color: var(--cyan);
+    color: var(--black);
+    transform: scale(1.05);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--morado);
+    box-shadow: 0 0 0 1px var(--morado);
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        width: 100% !important;
+    }
+
+    #fondo-imagen {
+        border-radius: 0 0 20px 20px;
+
+    }
+
+    #festival1 {
+        object-fit: cover;
+        height: 350px;
+        border-radius: 0px;
+
+    }
+
+    .perder {
+        font-size: x-large;
+    }
+
+    .tiendasCampania {
+        width: 100% !important;
+    }
+}
