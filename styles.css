@@ -394,6 +394,9 @@ button:active .button_top {
 }
 
 @media (max-width: 768px) {
+    .perder {
+        font-size: x-large !important;
+    }
     .carousel {
         width: 100% !important;
     }
@@ -411,7 +414,7 @@ button:active .button_top {
     }
 
     .perder {
-        font-size: x-large;
+        font-size: large !important;
     }
 
     .tiendasCampania {
